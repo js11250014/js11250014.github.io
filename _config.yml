@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ShanJia's Blog
+title: Shans Blog
 subtitle: ''
 description: 'Become an individual is also very beautiful, because it is free. Stay in the valley is also beautiful, because it is a kind of rest.'
 keywords:
@@ -28,7 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -40,13 +40,13 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -103,3 +103,19 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  model:
+    use: live2d-widget-model-wanko  #选择哪种模型
+  display: #放置位置和大小
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: false #是否在手机端显示
