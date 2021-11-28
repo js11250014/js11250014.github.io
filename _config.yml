@@ -5,7 +5,7 @@
 # Site
 title: ShanJia's Blog
 subtitle: ''
-description: ''
+description: 'Become an individual is also very beautiful, because it is free. Stay in the valley is also beautiful, because it is a kind of rest.'
 keywords:
 author: Shan Jia
 language: zh-Hans
@@ -98,6 +98,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+theme_config:
+
+  #scheme: Muse
+  #scheme: Mist
+  #scheme: Pisces
+  scheme: Gemini
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
