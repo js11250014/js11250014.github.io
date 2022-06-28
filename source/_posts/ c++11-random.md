@@ -1,5 +1,6 @@
 ---
 title: c++11 random
+date: 2021-11-28 13:12:11
 tag: c++
 categories: c++
 ---
