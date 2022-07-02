@@ -119,3 +119,7 @@ live2d:
     height: 300
   mobile:
     show: false #是否在手机端显示
+
+##
+encrypt:
+    enable: true
