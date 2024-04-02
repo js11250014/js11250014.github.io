@@ -17,7 +17,7 @@ cache:
   enable: true
 
 # Remove unnecessary files after hexo generate.
-minify: true
+minify: false
 
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
@@ -40,8 +40,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/16x16.png
-  medium: /images/32x32.png
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
@@ -52,24 +52,25 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  since: 2021
+  #since: 2015
 
   # Icon between year and copyright info.
   icon:
-    # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
+    # `heart` is recommended with animation in red (#ff0000).
+    name: user
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#FFFAFA"
+    color: "#808080"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
 
   # Powered by Hexo & NexT
-  powered: false
+  powered: true
 
-  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
+  # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: false
     icp:
@@ -77,7 +78,7 @@ footer:
     gongan_id:
     # The full num of gongan beian.
     gongan_num:
-    # The icon for gongan beian. See: https://www.beian.gov.cn/portal/download
+    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
     gongan_icon_url:
 
 # Creative Commons 4.0 International License.
@@ -88,7 +89,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: true
+  post: false
   language:
 
 
@@ -97,9 +98,9 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
-scheme: Pisces
+#scheme: Pisces
 #scheme: Gemini
 
 # Dark Mode
@@ -116,19 +117,19 @@ darkmode: false
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || fa fa-home
-  about: /about/ || fa fa-user
-  tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
-  #commonweal: /404/ || fa fa-heartbeat
+  home: / || home
+  #about: /about/ || user
+  #tags: /tags/ || tags
+  #categories: /categories/ || th
+  archives: /archives/ || archive
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: true
+  badges: false
 
 
 # ---------------------------------------------------------------
@@ -138,8 +139,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  #position: left
-  position: right
+  position: left
+  #position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -163,7 +164,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/avatar.png
+  url: #/images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -177,25 +178,25 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/JS11252001 || fab fa-github
-  E-Mail: mailto:nningfvcg15@gmail.com || fa fa-envelope
-  #Weibo: https://weibo.com/yourname || fab fa-weibo
-  #Google: https://plus.google.com/yourname || fab fa-google
-  #Twitter: https://twitter.com/yourname || fab fa-twitter
-  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
-  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
-  #YouTube: https://youtube.com/yourname || fab fa-youtube
-  #Instagram: https://instagram.com/yourname || fab fa-instagram
-  #Skype: skype:yourname?call|chat || fab fa-skype
+  #GitHub: https://github.com/yourname || github
+  #E-Mail: mailto:yourname@gmail.com || envelope
+  #Weibo: https://weibo.com/yourname || weibo
+  #Google: https://plus.google.com/yourname || google
+  #Twitter: https://twitter.com/yourname || twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  #YouTube: https://youtube.com/yourname || youtube
+  #Instagram: https://instagram.com/yourname || instagram
+  #Skype: skype:yourname?call|chat || skype
 
 social_icons:
   enable: true
-  icons_only: true
-  transition: true
+  icons_only: false
+  transition: false
 
 # Blog rolls
 links_settings:
-  icon: fa fa-link
+  icon: link
   title: Links
   # Available values: block | inline
   layout: block
@@ -222,7 +223,7 @@ chat:
   enable: false
   #service: chatra
   #service: tidio
-  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
+  icon: comment # Icon name in Font Awesome, set false to disable icon.
   text: Chat # Button text, change it as you wish.
 
 
@@ -232,7 +233,7 @@ chat:
 # ---------------------------------------------------------------
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: false
+excerpt_description: true
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -250,8 +251,8 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: false
-  item_text_post: false
+  separated_meta: true
+  item_text_post: true
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
@@ -274,10 +275,10 @@ reward:
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  #Twitter: https://twitter.com/username || fab fa-twitter
-  #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
-  #RSS: /atom.xml || fa fa-rss
+  #Twitter: https://twitter.com/username || twitter
+  #Telegram: https://t.me/channel_name || telegram
+  #WeChat: /images/wechat_channel.jpg || wechat
+  #RSS: /atom.xml || rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -354,12 +355,12 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: night
+  highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: true
+    enable: false
     # Show text copy result.
-    show_result: true
+    show_result: false
     # Available values: default | flat | mac
     style:
 
@@ -628,7 +629,7 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC81NDgwMi8zMTI3Mg
+livere_uid: # <your_uid>
 
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
@@ -711,13 +712,13 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: true
+  enable: false
   total_visitors: true
-  total_visitors_icon: fa fa-user
+  total_visitors_icon: user
   total_views: true
-  total_views_icon: fa fa-eye
+  total_views_icon: eye
   post_views: true
-  post_views_icon: fa fa-eye
+  post_views_icon: eye
 
 
 # ---------------------------------------------------------------
@@ -885,10 +886,10 @@ vendors:
   # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
   anime:
 
-  # Internal version: 5.13.0
-  # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
-  fontawesome: MTAyMC81NDgwMi8zMTI3Mg
+  # Internal version: 4.7.0
+  # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
+  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+  fontawesome:
 
   # MathJax
   # mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
